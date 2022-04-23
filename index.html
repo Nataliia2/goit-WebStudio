@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebStudio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+  <header class="header-frame">
+    <div class="container header-flex">
+        <nav class="main-nav">
+          <a class="logo header-logo" href="/">Web<span class="header-logo--accent">Studio</span></a>
+          <ul class="navigation list">
+            <li class="navigation-item"><a class="nav-current nav-li" href="./index.html">Студия</a></li>
+            <li class="navigation-item"><a href="./portfolio.html">Портфолио</a></li>
+            <li class="navigation-item"><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li class="contacts-item">
+            <a class="contacts-item--mail" href="mailto:info@devstudio.com">
+              <svg class="contacts--mail" width="16" height="16">
+                <use href="./img/sprayt.svg#icon-envelope-hover-1"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+          <li class="contacts-item">
+            <a class="contacts-item--mail" href="tel:0961111111">
+              <svg class="contacts--mail"  width="16" height="16">
+                <use href="./img/sprayt.svg#icon-smartphone-1"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
+        </ul>
+    </div>
+  </header>
+  
+  <!--страница студии-->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
+        <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
+      </div>
+    </section>
+  
+    <section class="features">
+      <div class="container">
+        <h2 class="visually-hidden" >Особенности</h2>
+          <ul class="features-list list">
+              <li class="features-li">
+                <div class="features-vector">
+                  <svg class="vector-img" width="70" height="70">
+                    <use href="./img/sprayt.svg#icon-antenna-1-1"></use>
+                  </svg>
+                </div>
+                <h3 class="features-heder">Внимание к деталям</h3>
+                <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              </li>
+              <li class="features-li">
+                <div class="features-vector">
+                  <svg class="vector-img" width="70" height="70">
+                    <use href="./img/sprayt.svg#icon-clock-1-1"></use>
+                  </svg>
+                </div>
+                <h3 class="features-heder">Пунктуальность</h3>
+                <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+              </li>
+              <li class="features-li">
+                <div class="features-vector">
+                  <svg class="vector-img" width="70" height="70">
+                    <use href="./img/sprayt.svg#icon-diagram-1-1"></use>
+                  </svg>
+                </div>
+                <h3 class="features-heder">Планирование</h3>
+                <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+              </li>
+              <li class="features-li">
+                <div class="features-vector">
+                  <svg class="vector-img" width="70" height="70">
+                    <use href="./img/sprayt.svg#icon-astronaut-1-1"></use>
+                  </svg>
+                </div>
+                <h3 class="features-heder">Современные технологии</h3>
+                <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              </li>
+          </ul>
+      </div>
+    </section>
+  
+    <section class="business">
+      <div class="container">
+        <h2>Чем мы занимаемся</h2>
+          <ul class="business-img list">
+            <li class="img">
+            <img src="./img/img.jpg" alt="разработка" width="370">
+            <div class="business-heder">
+              <p class="business-text">Десктопные приложения</p>
+            </div>
+            </li>
+            <li class="img">
+            <img src="./img/img(1).jpg" alt="мобильные версии" width="370">
+            <div class="business-heder">
+              <p class="business-text">Мобильные приложения</p>
+            </div>
+            </li>
+            <li class="img">
+            <img src="./img/img(2).jpg" alt="дизайн" width="370">
+            <div class="business-heder">
+              <p class="business-text">Мобильные приложения</p>
+            </div>
+            </li>
+          </ul>
+        </div>
+    </section>
+  
+    <section class="command">
+      <div class="container">
+        <h2>Наша команда</h2>
+          <ul class="command-list list">
+            <li class="command-li"> 
+              <img src="./img/photo1.jpg" alt="photo" width="270">
+              <div class="command-box">
+                <h3 class="command-heder">Игорь Демьяненко</h3>
+                <p class="command-text">Product Designer</p>
+                <ul class="command-social list">
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon"  width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon"  width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon"  width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon"  width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            
+            <li class="command-li">
+              <img src="./img/photo2.jpg" alt="photo" width="270">
+              <div class="command-box">
+                <h3 class="command-heder">Ольга Репина</h3>
+                <p class="command-text">Frontend Developer</p>
+                <ul class="command-social list">
+                  <li class="link-size">
+                    <a class="social" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            
+            <li class="command-li">
+              <img src="./img/photo3.jpg" alt="photo" width="270">
+              <div class="command-box">
+                <h3 class="command-heder">Николай Тарасов</h3>
+                <p class="command-text">Marketing</p>
+                <ul class="command-social list">
+                  <li class="command-link-size">
+                    <a class="social" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            
+            <li class="command-li">
+              <img src="./img/photo4.jpg" alt="photo" width="270">
+              <div class="command-box">
+                <h3 class="command-heder">Михаил Ермаков</h3>
+                <p class="command-text">UI Designer</p>
+                <ul class="command-social list">
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon"  width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="command-link--size">
+                    <a class="social" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./img/sprayt.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="clients">
+        <div class="container">
+          <h2>Постоянные клиенты</h2>
+            <ul class="clients-list list">
+              <li class="clients-li"> 
+                <a class="clients-link" href="">
+                  <svg class="clients-logo" width="106" height="60">
+                    <use href="./img/sprayt.svg#icon-Logo-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients-li">
+                <a class="clients-link" href="">
+                  <svg class="clients-logo" width="106" height="60">
+                    <use href="./img/sprayt.svg#icon-Logo-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients-li">
+                <a class="clients-link" href="">
+                  <svg class="clients-logo" width="106" height="60">
+                    <use href="./img/sprayt.svg#icon-Logo-3"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients-li">
+                <a class="clients-link" href="">
+                  <svg class="clients-logo" width="106" height="60">
+                    <use href="./img/sprayt.svg#icon-Logo-4"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients-li">
+                <a class="clients-link" href="">
+                  <svg class="clients-logo" width="106" height="60">
+                    <use href="./img/sprayt.svg#icon-Logo-5"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients-li">
+                <a class="clients-link" href="">
+                  <svg class="clients-logo" width="106" height="60">
+                    <use href="./img/sprayt.svg#icon-Logo-6"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer-container container" >
+      <div class="footer-section">
+          <a class="logo " href="/">Web<span class="footer-logo--accent">Studio</span></a>
+          <address> 
+            <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="footer-contacts list">
+              <li>
+                <a class="footer-mail" href="mailto:info@example.com"> info@example.com</a>
+              </li>
+              <li>
+                <a href="tel:+380991111111"> +38 099 111 11 11</a>
+              </li>
+            </ul>
+        </address>
+      </div>
+      <div>
+        <h3 class="footer-header">присоединяйтесь</h3>
+        <ul class="footer-list list">
+          <li class="footer-li">
+            <a class="footer-social" href="">
+              <svg class="socials-icon" width="20" height="20">
+                <use href="./img/sprayt.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-li">
+            <a class="footer-social" href="">
+              <svg class="socials-icon" width="20" height="20">
+                <use href="./img/sprayt.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-li">
+            <a class="footer-social" href="">
+              <svg class="socials-icon" width="20" height="20">
+                <use href="./img/sprayt.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-li">
+            <a class="footer-social" href="">
+              <svg class="socials-icon"  width="20" height="20">
+                <use href="./img/sprayt.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul> 
+      </div>
+      
+      <div class="footer-form--conteiner">
+        <b class="footer-form-text">Подпишитесь на рассылку</b>
+        <form class="footer-form">
+          <input class="footer-form--input" type="email" name="mail" placeholder="E-mail">
+        
+            <button class="btn-form footer-btn" type="submit">Подписаться
+              <svg class="btn-icon" width="15" height="15">
+                <use href="./img/sprayt.svg#icon-icon-send-1"></use>
+              </svg>
+            </button>
+          </form> 
+      </div>
+    
+    </div>
+  </footer>
+
+  <!--Форма-->  
+  
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-button" data-modal-close>
+        <svg width="17" height="17">
+          <use href="./img/sprayt.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
+      
+      <form class="form js-speaker-form">
+        <div class="form-field">
+          <label class="form-label" for="name">Имя</label>
+          <input class="form-input" type="text" name="name" id="name" autofocus>
+          <span class="form-icon">
+            <svg width="12" height="12">
+              <use href="./img/sprayt.svg#icon-Vector-1"></use>
+            </svg>
+          </span>
+        </div>
+        
+        <div class="form-field">
+          <label class="form-label" for="tel">Телефон</label>
+          <input class="form-input" type="tel" name="tel" id="tel">
+          <span class="form-icon">
+            <svg width="13" height="13">
+              <use href="./img/sprayt.svg#icon-Vector-2"></use>
+            </svg>
+          </span>
+        </div>
+        
+        
+        <div class="form-field">
+          <label class="form-label" for="mail">Почта</label>
+          <input class="form-input" type="email" name="mail" id="mail">
+          <span class="form-icon">
+            <svg width="15" height="12">
+              <use href="./img/sprayt.svg#icon-Vector-3"></use>
+            </svg>
+          </span>
+        </div>
+        
+        
+        <div class="form-comment">
+          <label class="form-label" for="comment">Комментарий</label>
+          <textarea class="comment form-input" name="comment" id="comment" placeholder="Введите текст"></textarea>
+        </div>
+        
+        
+        <label class="form-checkbox field" for="polisi">
+          <input class="checkbox-polisi" type="checkbox" name="polisi" id="polisi">
+          <span class="checkbox-icon"></span>
+          Соглашаюсь с рассылкой и принимаю <a class="checkbox-contract" href="">Условия договора</a>
+        </label>
+
+        <button class="form-btn form-modal" type="submit">Отрпавить</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="./js/modal.js"></script>
+</body>
+</html>

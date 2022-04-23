@@ -1,0 +1,27 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: $background-color;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)),
+        url('../../img/фон.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+
+}
+
+.hero-header {
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+}
+

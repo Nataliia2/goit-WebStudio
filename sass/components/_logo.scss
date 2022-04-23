@@ -1,0 +1,21 @@
+.logo {
+  color: $accent-color;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
+.header-logo--accent {
+  color: $text-color;
+}
+
+.footer-logo--accent {
+    color: $white-text;
+}

@@ -1,0 +1,7 @@
+.header-frame {
+    border-bottom: 1px solid #ececec;
+}
+
+.header-flex {
+    @extend .flex;
+}
