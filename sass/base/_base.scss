@@ -36,10 +36,16 @@ h1 {
     color: $white-text;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.37;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 769px) {
+    font-size: 44px;
+    line-height: 1.36;
+    }
 }
 
 h2 {
@@ -48,27 +54,38 @@ h2 {
     color: $text-color;
 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     text-decoration: none;
+
+    @media screen and (min-width: 769px) {
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 .container {
-    width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+
+    @media screen and (min-width: 480px) { 
+        width: 480px;  
+    }
+
+    @media screen and (min-width: 768px){
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .list {
     list-style: none;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .visually-hidden {
@@ -85,3 +102,8 @@ h2 {
     overflow: hidden;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

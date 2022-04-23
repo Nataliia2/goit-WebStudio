@@ -1,10 +1,23 @@
 .contacts {
-    display: flex;
-    margin-left: auto;
+
+    @media screen and (max-widht: 480px) {
+        display: none;
+    }
+
+    @media screen and (min-widht: 1200px) {
+        display: flex;
+        margin-left: auto;
+    }
 }
 
 .contacts .contacts-item+.contacts-item {
+    @media screen and (min-widht: 1200px) {
     margin-left: 50px;
+    }
+}
+
+.contacts-item {
+    margin-bottom: 10px;
 }
 
 .contacts a {
@@ -28,6 +41,7 @@
 .contacts-item--mail {
     @extend .flex;
 }
+
 .contacts--mail {
     @extend .flex;
 

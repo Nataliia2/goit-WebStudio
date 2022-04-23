@@ -1,19 +1,36 @@
 .logo {
-  color: $accent-color;
+    color: $accent-color;
 
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
-.header-logo {
-  margin-right: 93px;
+
+    
+ .header-logo {
+    margin-top: 26px;
+    margin-right: 88px;
+    font-size: 24px;
+    line-height: 1.16;
+
+    @media screen and (min-width: 1200px) {
+    margin-top: 24px;
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+ }
 }
 
 .header-logo--accent {
-  color: $text-color;
+    color: $text-color;
 }
 
 .footer-logo--accent {
