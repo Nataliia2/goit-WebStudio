@@ -1,20 +1,27 @@
-.header-menu {
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+/*.header-menu {
     height: 796px;
+    width: 100%;
     text-align: left;
 
     background-color: $white-text;
 
-    & .is-open {
-        display: block;
-    }
+    
 
+
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        & .is-open {
+            display: block;
+        }
+    
+    }
     @media screen and (min-width: 768px) {
         display: none;
+        
     }
 }
 
@@ -30,4 +37,4 @@
     &:focus {
         color: $accent-color;
     }
-}
+}*/

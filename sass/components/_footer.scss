@@ -6,9 +6,10 @@
 }
 
 .footer-container {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         display: block;
         text-align: center;
+        justify-content: center;
     }
     
     @media screen and (min-width: 768px) {
@@ -44,6 +45,12 @@
     }
 }
 
+.footer-list-conteiner {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+}
+
 .footer-header {
     color: #ffffff;
 
@@ -57,7 +64,7 @@
     display: flex;
     margin-top: 20px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         justify-content: center;
     }
 }

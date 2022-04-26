@@ -21,7 +21,7 @@
     border: none;
     background-color: transparent;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         display: none;
     }
 
@@ -31,10 +31,10 @@
     display: none;
 }
 
-.header-menu-btn .is-open .icon-cross {
+.header-menu-btn.is-open .icon-cross {
     display: block;
 }
 
-.header-menu-btn .is-open .icon-menu {
+.header-menu-btn.is-open .icon-menu {
     display: none;
 }
