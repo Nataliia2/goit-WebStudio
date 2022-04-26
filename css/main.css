@@ -957,7 +957,7 @@ background-size: 480px 400px;
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .footer-container {
     display: block;
     text-align: center;
@@ -1031,7 +1031,7 @@ background-size: 480px 400px;
   margin-top: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .footer-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1054,7 +1054,7 @@ background-size: 480px 400px;
   color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .footer-section {
     margin-bottom: 60px;
   }
