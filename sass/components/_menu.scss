@@ -1,10 +1,33 @@
 .header-menu {
+
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-   
-    text-align: center;
+    height: 796px;
+    text-align: left;
 
     background-color: $white-text;
+
+    & .is-open {
+        display: block;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-navigation {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17px;
+    letter-spacing: 0.02em;
+    margin-bottom: 35px;
+    color: $text-color;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }

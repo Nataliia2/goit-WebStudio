@@ -331,8 +331,32 @@ h2 {
   top: 100%;
   left: 0;
   width: 100%;
-  text-align: center;
+  height: 796px;
+  text-align: left;
   background-color: #ffffff;
+}
+
+.header-menu .is-open {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+.menu-navigation {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17px;
+  letter-spacing: 0.02em;
+  margin-bottom: 35px;
+  color: #212121;
+}
+
+.menu-navigation:hover, .menu-navigation:focus {
+  color: #2196f3;
 }
 
 .navigation {
