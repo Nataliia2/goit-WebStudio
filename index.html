@@ -39,6 +39,17 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+
+        <button type="button" class="header-menu-btn is-open" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./img/sprayt.svg#icon-close-black" ></use>
+            <use class="icon-menu"  href="./img/sprayt.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="header-menu">
+
+        </div>
     </div>
   </header>
   
@@ -126,7 +137,13 @@
         <h2>Наша команда</h2>
           <ul class="command-list list">
             <li class="command-li"> 
-              <img src="./img/photo1.jpg" alt="photo" width="270">
+              <img class="command-img" srcset="
+                                ./img/photo1 x1.jpg 1x,
+                                ./img/photo1 x2.jpg 2x
+                                " 
+                                src="./img/photo1 x1.jpg"
+                                alt="фото" 
+                                width="270">
               <div class="command-box">
                 <h3 class="command-heder">Игорь Демьяненко</h3>
                 <p class="command-text">Product Designer</p>
@@ -164,7 +181,13 @@
             </li>
             
             <li class="command-li">
-              <img src="./img/photo2.jpg" alt="photo" width="270">
+              <img class="command-img" srcset="
+                                ./img/photo2 x1.jpg 1x,
+                                ./img/photo2 x2.jpg 2x
+                                " 
+                                src="./img/photo2 x1.jpg"
+                                alt="фото" 
+                                width="270">
               <div class="command-box">
                 <h3 class="command-heder">Ольга Репина</h3>
                 <p class="command-text">Frontend Developer</p>
@@ -202,7 +225,13 @@
             </li>
             
             <li class="command-li">
-              <img src="./img/photo3.jpg" alt="photo" width="270">
+              <img class="command-img" srcset="
+                                ./img/photo3 x1.jpg 1x,
+                                ./img/photo3 x2.jpg 2x
+                                " 
+                                src="./img/photo3 x1.jpg"
+                                alt="фото" 
+                                width="270">
               <div class="command-box">
                 <h3 class="command-heder">Николай Тарасов</h3>
                 <p class="command-text">Marketing</p>
@@ -240,7 +269,13 @@
             </li>
             
             <li class="command-li">
-              <img src="./img/photo4.jpg" alt="photo" width="270">
+              <img class="command-img" srcset="
+                                ./img/photo4 x1.jpg 1x,
+                                ./img/photo4 x2.jpg 2x
+                                " 
+                                src="./img/photo4 x1.jpg"
+                                alt="фото" 
+                                width="270">
               <div class="command-box">
                 <h3 class="command-heder">Михаил Ермаков</h3>
                 <p class="command-text">UI Designer</p>
@@ -333,9 +368,10 @@
   
   <footer class="footer">
     <div class="footer-container container" >
-      <div class="footer-section">
+      <div class="footer-tablet">
+        <div class="footer-section">
           <a class="logo " href="/">Web<span class="footer-logo--accent">Studio</span></a>
-          <address> 
+          <address>
             <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="footer-contacts list">
               <li>
@@ -345,41 +381,43 @@
                 <a href="tel:+380991111111"> +38 099 111 11 11</a>
               </li>
             </ul>
-        </address>
+          </address>
+        </div>
+        <div>
+          <h3 class="footer-header">присоединяйтесь</h3>
+          <ul class="footer-list list">
+            <li class="footer-li">
+              <a class="footer-social" href="">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./img/sprayt.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-social" href="">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./img/sprayt.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-social" href="">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./img/sprayt.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-social" href="">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./img/sprayt.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h3 class="footer-header">присоединяйтесь</h3>
-        <ul class="footer-list list">
-          <li class="footer-li">
-            <a class="footer-social" href="">
-              <svg class="socials-icon" width="20" height="20">
-                <use href="./img/sprayt.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-social" href="">
-              <svg class="socials-icon" width="20" height="20">
-                <use href="./img/sprayt.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-social" href="">
-              <svg class="socials-icon" width="20" height="20">
-                <use href="./img/sprayt.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-social" href="">
-              <svg class="socials-icon"  width="20" height="20">
-                <use href="./img/sprayt.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul> 
-      </div>
+      
       
       <div class="footer-form--conteiner">
         <b class="footer-form-text">Подпишитесь на рассылку</b>
@@ -459,5 +497,6 @@
   </div>
   
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 </html>

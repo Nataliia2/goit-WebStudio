@@ -1,1 +1,59 @@
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
 
+    background-color: $background-color;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)),
+        url('../../img/фон.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 480px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1600px;
+        height: 600px;
+
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+}
+
+.hero {
+width: 480px;
+height: 400px;
+background-image: url('../../img/Header\ img\ x1.jpg');
+background-size: 480px 400px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .box {
+        background-image: url('../../img/Header\ img\ x2.jpg');
+    }
+}
+
+
+.hero-header {
+    width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+    }
+}

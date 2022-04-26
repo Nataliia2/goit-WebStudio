@@ -2,22 +2,30 @@
 
     @media screen and (max-width: 480px) {
         display: none;
+        
     }
 
-    @media screen and (min-widht: 1200px) {
+    @media screen and (min-width: 768px) {
+        display:inline-block; 
+    }
+
+    @media screen and (min-width: 1200px) {
         display: flex;
         margin-left: auto;
     }
 }
 
 .contacts .contacts-item+.contacts-item {
-    @media screen and (min-widht: 1200px) {
+    @media screen and (min-width: 1200px) {
     margin-left: 50px;
     }
 }
 
 .contacts-item {
-    margin-bottom: 10px;
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+        margin-bottom: 10px;
+    }
+    
 }
 
 .contacts a {
