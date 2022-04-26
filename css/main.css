@@ -111,7 +111,7 @@ h2 {
   overflow: hidden;
 }
 
-.flex, .modal-button, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-link, .footer-form--input::-webkit-input-placeholder, .portfolio-overlai {
+.flex, .modal-button, .main-nav, .contacts-item--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-link, .footer-form--input::-webkit-input-placeholder, .portfolio-overlai {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -120,7 +120,7 @@ h2 {
           align-items: center;
 }
 
-.flex, .modal-button, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-link, .footer-form--input:-ms-input-placeholder, .portfolio-overlai {
+.flex, .modal-button, .main-nav, .contacts-item--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-link, .footer-form--input:-ms-input-placeholder, .portfolio-overlai {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -129,7 +129,7 @@ h2 {
       align-items: center;
 }
 
-.flex, .modal-button, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-link, .footer-form--input::-ms-input-placeholder, .portfolio-overlai {
+.flex, .modal-button, .main-nav, .contacts-item--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-link, .footer-form--input::-ms-input-placeholder, .portfolio-overlai {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -138,7 +138,7 @@ h2 {
       align-items: center;
 }
 
-.flex, .modal-button, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-link, .footer-form--input::placeholder, .portfolio-overlai {
+.flex, .modal-button, .main-nav, .contacts-item--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-link, .footer-form--input::placeholder, .portfolio-overlai {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,6 +331,7 @@ h2 {
   top: 100%;
   left: 0;
   width: 100%;
+  text-align: center;
   background-color: #ffffff;
 }
 
@@ -401,7 +402,13 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .contacts {
-    display: inline-block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    display: block;
+    text-align: left;
   }
 }
 
@@ -1419,6 +1426,16 @@ textarea {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio-box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 20px 24px 20px 24px;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+}
+
 .portfolio-images {
   position: relative;
   overflow: hidden;
@@ -1443,11 +1460,6 @@ textarea {
     width: 370px;
     height: 294px;
   }
-}
-
-.portfolio-box {
-  -ms-flex-wrap: 1;
-      flex-wrap: 1;
 }
 
 .portfolio-overlai {
@@ -1477,13 +1489,6 @@ textarea {
   line-height: 1.56;
   margin-left: 24px;
   margin-right: 24px;
-}
-
-.portfolio-box {
-  padding: 20px 24px 20px 24px;
-  border-right: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
-  border-left: 1px solid #ececec;
 }
 
 .portfolio-heder {

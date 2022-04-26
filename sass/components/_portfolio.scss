@@ -56,6 +56,16 @@
     }
 }
 
+
+
+.portfolio-box {
+    flex-grow: 1;
+    padding: 20px 24px 20px 24px;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+}
+
 .portfolio-images {
     position: relative;
     overflow: hidden;
@@ -113,13 +123,7 @@
 
 }
 
-.portfolio-box {
-    flex-grow: 1;
-    padding: 20px 24px 20px 24px;
-    border-right: 1px solid #ececec;
-    border-bottom: 1px solid #ececec;
-    border-left: 1px solid #ececec;
-}
+
 
 .portfolio-heder {
     color: $text-color;
