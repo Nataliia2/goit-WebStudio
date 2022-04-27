@@ -633,13 +633,13 @@ h2 {
 }
 
 .hero {
-  background-image: url("../../img/Header img x1.jpg");
+  background-image: url("../img/Header img x1.jpg");
   background-size: cover;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/Header img x2.jpg");
+    background-image: url("../img/Header img x2.jpg");
   }
 }
 
