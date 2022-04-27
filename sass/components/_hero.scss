@@ -9,6 +9,7 @@
         url('../img/фон.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     width: 100%;
     
@@ -36,17 +37,15 @@
 
 }
 
-.hero {
-background-image: url('../img/Header\ img\ x1.jpg');
-background-size: cover;
-}
-
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
-        background-image: url('../img/Header\ img\ x2.jpg');
+        background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)),
+        url('../img/фон.jpg');
     }
 
 
