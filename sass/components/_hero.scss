@@ -37,7 +37,7 @@
 }
 
 .hero {
-background-image: url('../../img/Header\ img\ x1.jpg');
+background-image: url('../img/Header\ img\ x1.jpg');
 background-size: cover;
 }
 
@@ -46,7 +46,7 @@ background-size: cover;
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
-        background-image: url('../../img/Header\ img\ x2.jpg');
+        background-image: url('../img/Header\ img\ x2.jpg');
     }
 
 
