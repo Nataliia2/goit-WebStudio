@@ -6,7 +6,7 @@
     background-image: linear-gradient(to right,
             rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.4)),
-        url('../img/Header\ img\ x1.jpg');
+        url('../img/Header_img_x1.jpg');
     
         background-repeat: no-repeat;
     background-position: center;
@@ -20,16 +20,11 @@
     text-align: center;
 
     @media screen and (min-width: 480px) {
-        width: 480px;
         height: 400px;
     }
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        width: 1600px;
         height: 600px;
 
         padding-top: 200px;
@@ -46,7 +41,7 @@
         background-image: linear-gradient(to right,
             rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.4)),
-        url('../img/Header\ img\ x2.jpg');
+        url('../img/Header_img_x2.jpg');
     }
 
 

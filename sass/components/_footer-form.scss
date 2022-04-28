@@ -6,6 +6,10 @@
     line-height: 1.14;
     text-transform: uppercase;
 
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+
     @media screen and (max-width: 1199px) {
         text-align: center;
     }

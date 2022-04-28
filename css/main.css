@@ -313,7 +313,7 @@ h2 {
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 10;
+  z-index: 4;
 }
 
 .header-menu-btn:hover, .header-menu-btn:focus {
@@ -339,9 +339,19 @@ h2 {
 }
 
 .header-menu {
-  position: absolute;
-  height: 796vh;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  left: 0;
+  padding: 48px 40px;
+  height: 100vh;
+  width: 100vw;
   text-align: left;
   background-color: #ffffff;
   opacity: 0;
@@ -351,16 +361,10 @@ h2 {
   transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), opacity 400ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 5;
+  z-index: 3;
 }
 
 @media screen and (max-width: 767px) {
-  .header-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
   .header-menu.is-open {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -390,10 +394,6 @@ h2 {
   opacity: 1;
 }
 
-.menu-nav {
-  padding: 48px 40px;
-}
-
 .menu-navigation {
   margin-bottom: 32px;
 }
@@ -416,8 +416,11 @@ h2 {
   color: #2196f3;
 }
 
+.menu-contacts-grup {
+  margin-top: auto;
+}
+
 .menu-contacts-item {
-  margin-top: 302px;
   margin-bottom: 32px;
 }
 
@@ -599,8 +602,8 @@ h2 {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../img/Header img x1.jpg");
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Header img x1.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../img/Header_img_x1.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Header_img_x1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -612,20 +615,13 @@ h2 {
 
 @media screen and (min-width: 480px) {
   .hero {
-    width: 480px;
     height: 400px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -634,8 +630,8 @@ h2 {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../img/Header img x2.jpg");
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Header img x2.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../img/Header_img_x2.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Header_img_x2.jpg");
   }
 }
 
@@ -693,10 +689,17 @@ h2 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .features-li {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-li {
     width: calc((100% / 2 - 2 * 15px));
     margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -758,6 +761,12 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .features-heder {
+    text-align: center;
+  }
 }
 
 .business {
@@ -848,7 +857,7 @@ h2 {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .command-li {
     margin-bottom: 30px;
   }
@@ -995,6 +1004,14 @@ h2 {
 
 @media screen and (max-width: 480px) {
   .clients-li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 30px;
   }
 }
@@ -1180,6 +1197,12 @@ h2 {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-form--conteiner {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-form--conteiner {
     text-align: center;
@@ -1293,6 +1316,8 @@ h2 {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+  z-index: 10;
 }
 
 .backdrop.is-hidden {
@@ -1303,13 +1328,20 @@ h2 {
 .modal {
   position: absolute;
   background-color: #FFFFFF;
-  width: 450px;
+  width: 100%;
   height: 609px;
   padding: 40px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1384,7 +1416,7 @@ textarea {
   font-size: 12px;
   line-height: 1.17px;
   letter-spacing: 0.01em;
-  width: 370px;
+  width: 100%;
   height: 120px;
   padding: 12px 16px;
   cursor: pointer;
@@ -1427,6 +1459,12 @@ textarea {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
+}
+
+@media screen and (min-width: 480px) {
+  .comment {
+    width: 370px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1515,12 +1553,7 @@ textarea {
 
 .container .filters-button + .filters-button {
   margin-left: 8px;
-}
-
-@media screen and (max-width: 480px) {
-  .filters-button {
-    margin-bottom: 15px;
-  }
+  margin-bottom: 15px;
 }
 
 .list-btn {
@@ -1571,6 +1604,12 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-element {
+    margin-bottom: 30px;
   }
 }
 
@@ -1678,6 +1717,12 @@ textarea {
   line-height: 1.56;
   margin-left: 24px;
   margin-right: 24px;
+}
+
+@media screen and (max-width: 480px) {
+  .overlai-tex {
+    font-size: 14px;
+  }
 }
 
 .portfolio-heder {
