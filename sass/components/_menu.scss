@@ -8,7 +8,7 @@
     height: 100vh;
     width: 100vw;
     text-align: left;
-    overflow: scroll;
+    overflow-y: scroll;
 
     background-color: $white-text;
 
@@ -58,7 +58,7 @@
     color: $text-color;
 
     font-weight: 500;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     
@@ -68,6 +68,10 @@
     &:hover,
     &:focus {
         color: $accent-color;
+    }
+
+    @media screen and (min-width: 480px) {
+        font-size: 40px;
     }
 }
 
