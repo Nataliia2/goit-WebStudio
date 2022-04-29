@@ -12,7 +12,10 @@
 
 .container .filters-button+.filters-button {
     margin-left: 8px;
-    margin-bottom: 15px;
+    
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
 }
 
 

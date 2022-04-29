@@ -607,7 +607,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -621,7 +621,7 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1330,7 +1330,9 @@ h2 {
   background-color: #FFFFFF;
   width: 100%;
   height: 609px;
+  max-height: 100%;
   padding: 40px;
+  overflow: scroll;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1553,7 +1555,12 @@ textarea {
 
 .container .filters-button + .filters-button {
   margin-left: 8px;
-  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .container .filters-button + .filters-button {
+    margin-bottom: 15px;
+  }
 }
 
 .list-btn {
@@ -1719,7 +1726,7 @@ textarea {
   margin-right: 24px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .overlai-tex {
     font-size: 14px;
   }
