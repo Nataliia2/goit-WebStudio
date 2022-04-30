@@ -8,6 +8,10 @@ body.modal-open {
   overflow: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -933,25 +937,8 @@ h2 {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 480px) {
-  .command-img {
-    width: 450px;
-    height: 460px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .command-img {
-    width: 354px;
-    height: 374px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .command-img {
-    width: 270px;
-    height: 260px;
-  }
+.command-img {
+  width: 100%;
 }
 
 .social {
