@@ -730,6 +730,13 @@ h2 {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 480px) {
+  .features-vector {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .features-vector {
     width: 450px;
