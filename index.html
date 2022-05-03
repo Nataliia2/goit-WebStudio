@@ -186,15 +186,23 @@
         <h2>Наша команда</h2>
           <ul class="command-list list">
             <li class="command-li"> 
-              <img class="command-img" srcset="
-                                ./img/photo1_x1.jpg 1200w,
-                                ./img/photo1_x2.jpg 768w,
-                                ./img/photo1_x2.jpg 480w
-                                " 
-                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
-                                src="./img/photo1_x1.jpg"
-                                alt="фото" 
-                                width="270">
+              <picture>
+              <source srcset="./img/photoDes1_х1.jpg 1x,
+                              ./img/photoDes1_х2.jpg 2x" 
+                      media="(min-width: 1200px)" 
+                      type="image/jpeg">
+              <source srcset="./img/photoTab1_х1.jpg 1x,
+                              ./img/photoTab1_х2.jpg 2x" 
+                      media="(min-width: 768px)" 
+                      type="image/jpeg">
+              <source srcset="./img/photoMob1_х2.jpg 2x"
+                      media="(max-width: 767px)" 
+                      type="image/jpeg">
+              <img class="command-img" 
+                   src="./img/photoMob1_х1.jpg" 
+                   alt="фото" 
+                   width="270">
+              </picture>
               <div class="command-box">
                 <h3 class="command-heder">Игорь Демьяненко</h3>
                 <p class="command-text">Product Designer</p>
@@ -232,15 +240,23 @@
             </li>
             
             <li class="command-li">
-              <img class="command-img" srcset="
-                                ./img/photo2_x1.jpg 1200w,
-                                ./img/photo2_x2.jpg 768w,
-                                ./img/photo2_x2.jpg 480w
-                                " 
-                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
-                                src="./img/photo2_x1.jpg"
-                                alt="фото" 
-                                width="270">
+              <picture>
+                <source srcset="./img/photoDes2_х1.jpg 1x,
+                                ./img/photoDes2_х2.jpg 2x" 
+                        media="(min-width: 1200px)" 
+                        type="image/jpeg">
+                <source srcset="./img/photoTab2_х1.jpg 1x,
+                                ./img/photoTab2_х2.jpg 2x" 
+                        media="(min-width: 768px)" 
+                        type="image/jpeg">
+                <source srcset="./img/photoMob2_х2.jpg 2x" 
+                        media="(max-width: 767px)" 
+                        type="image/jpeg">
+                <img class="command-img" 
+                     src="./img/photoMob2_х1.jpg" 
+                     alt="фото" 
+                     width="270">
+              </picture>
               <div class="command-box">
                 <h3 class="command-heder">Ольга Репина</h3>
                 <p class="command-text">Frontend Developer</p>
@@ -278,14 +294,23 @@
             </li>
             
             <li class="command-li">
-              <img class="command-img" srcset="
-                                ./img/photo3_x1.jpg 1200w,
-                                ./img/photo3_x2.jpg 768w,
-                                ./img/photo3_x2.jpg 480w
-                                " 
-                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"                                src="./img/photo3_x1.jpg"
-                                alt="фото" 
-                                width="270">
+              <picture>
+                <source srcset="./img/photoDes3_х1.jpg 1x,
+                                ./img/photoDes3_х2.jpg 2x" 
+                        media="(min-width: 1200px)" 
+                        type="image/jpeg">
+                <source srcset="./img/photoTab3_х1.jpg 1x,
+                                ./img/photoTab3_х2.jpg 2x" 
+                        media="(min-width: 768px)" 
+                        type="image/jpeg">
+                <source srcset="./img/photoMob3_х2.jpg 2x" 
+                        media="(max-width: 767px)" 
+                        type="image/jpeg">
+                <img class="command-img" 
+                     src="./img/photoMob3_х1.jpg" 
+                     alt="фото" 
+                     width="270">
+              </picture>
               <div class="command-box">
                 <h3 class="command-heder">Николай Тарасов</h3>
                 <p class="command-text">Marketing</p>
@@ -323,15 +348,23 @@
             </li>
             
             <li class="command-li">
-              <img class="command-img" srcset="
-                                ./img/photo4_x1.jpg 1200w,
-                                ./img/photo4_x2.jpg 768w,
-                                ./img/photo4_x2.jpg 480w
-                                " 
-                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
-                                src="./img/photo4_x1.jpg"
-                                alt="фото" 
-                                width="270">
+              <picture>
+                <source srcset="./img/photoDes4_х1.jpg 1x,
+                                ./img/photoDes4_х2.jpg 2x" 
+                        media="(min-width: 1200px)" 
+                        type="image/jpeg">
+                <source srcset="./img/photoTab4_х1.jpg 1x,
+                                ./img/photoTab4_х2.jpg 2x" 
+                        media="(min-width: 768px)" 
+                        type="image/jpeg">
+                <source srcset="./img/photoMob4_х2.jpg 2x" 
+                        media="(max-width: 767px)" 
+                        type="image/jpeg">
+                <img class="command-img" 
+                     src="./img/photoMob4_х1.jpg" 
+                     alt="фото" 
+                     width="270">
+              </picture>
               <div class="command-box">
                 <h3 class="command-heder">Михаил Ермаков</h3>
                 <p class="command-text">UI Designer</p>
