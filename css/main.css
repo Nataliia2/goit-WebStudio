@@ -800,7 +800,7 @@ h2 {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .business {
     display: none;
   }
